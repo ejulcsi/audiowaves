@@ -14,22 +14,18 @@ var ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+var button = document.querySelector("button");
 var playing = false;
 
 ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-canvas.addEventListener('click', function() {
-	if (playing) {
+button.addEventListener('click', function() {
+  if (playing) {
     audio.pause();
   } else {
     audio.play();
     playing = true;
   }
-});
-
-
-audio.addEventListener('loadmetadata', function() {
-  console.log(audio.duration);
 });
 
 
