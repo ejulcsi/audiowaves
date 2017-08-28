@@ -69,7 +69,7 @@ function draw() {
   var barHeight;
   var style = 'hsla(100, 40%, 40%, 0.6)';
 
-  ctx.fillStyle = 'rgb(12, 18, 20)';
+  ctx.fillStyle = 'hsla(152, 40%, 30%, 0.5)';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   for(var i = 0; i < grouped.length; i++) {
